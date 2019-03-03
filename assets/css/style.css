@@ -1,0 +1,36 @@
+.body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.background {
+    /* background-image: url("../images/green_meadows_1280.jpg"); 
+    background-size: cover;  */
+}
+
+.flower-btn {
+    margin: 5px;
+    padding: 5px;
+}
+
+.flower-gifs {
+    border: 1px solid green;
+}
+
+.form-group {
+    display: block;
+}
+
+#flower-form {
+    text-align: center;
+}
+
+#heading {
+   font-size: 35px;
+   text-align: center;
+}
+
+#created-buttons {
+    margin: 10px;
+    text-align: center;
+}
