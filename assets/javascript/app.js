@@ -47,7 +47,21 @@ $(document).ready(function () {
                     // }
 
                 };
-
+                $(".flower-img").on("click", function () {
+                    debugger;
+                    // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+                    var state = $(this).attr("data-state");
+                    if (state === "still") {
+                        $(this).attr("src", $(this).attr("data-state-animate"));
+                        console.log(this);
+                        $(this).attr("data-state", "animate");
+                    } else {
+                        $(this).attr("src", $(this).attr("data-state-still"));
+                        console.log(this);
+                        $(this).attr("data-state", "still");
+                    };
+                });
+            
             });
     };
 

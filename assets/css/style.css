@@ -3,10 +3,10 @@
     text-align: center;
 }
 
-.background {
-    /* background-image: url("../images/green_meadows_1280.jpg"); 
-    background-size: cover;  */
+.jumbotron {
+    background-image: url("../images/leaves.jpg");
 }
+
 
 .flower-btn {
     margin: 5px;
