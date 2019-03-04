@@ -1,12 +1,10 @@
 .body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
 }
 
-.jumbotron {
-    background-image: url("../images/leaves.jpg");
+.background {
+    background-color: rgb(182, 228, 102);
 }
-
 
 .flower-btn {
     margin: 5px;
@@ -16,16 +14,21 @@
 .flower-gifs {
     border: 1px solid green;
 }
-
 .form-group {
-    display: block;
+    margin: auto;
 }
+
+img {
+    border-radius: 35%;
+}
+      
 
 #flower-form {
     text-align: center;
 }
 
-#heading {
+.heading {
+    background-color: rgb(76, 119, 3);
    font-size: 35px;
    text-align: center;
 }
