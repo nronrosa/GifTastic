@@ -12,17 +12,19 @@ $(document).ready(function () {
             .done(function (response) {
                 var results = response.data;
                 for (var i = 0; i < results.length; i++) {
-                    var flowerDiv = $("<div>");
+                    var flowerDiv = $("<div class='col-lg-6 col-md-4 col-sm-12 flower-gif-deets'>");
                     var flowerImage = $("<img>");
-                    var p = $("<p>").text("Rating: " + results[i].rating);
+                    var pRating = $("<p>").text("Rating: " + results[i].rating);
+                    var pTitle = $("<p>").text("Title: " + results[i].title);
                     flowerImage.attr("src", results[i].images.fixed_height_still.url);
                     flowerImage.attr("data-state-still", results[i].images.fixed_height_still.url);
                     flowerImage.attr("data-state-animate", results[i].images.fixed_height.url);
                     flowerImage.attr("data-state", "still");
                     flowerImage.addClass("flower-img");
-                    flowerDiv.append(p);
                     flowerDiv.append(flowerImage);
                     $("#gifs").prepend(flowerDiv);
+                    flowerDiv.append(pRating);
+                    flowerDiv.append(pTitle);
                 };
                 $(".flower-img").on("click", function () {
                     var state = $(this).attr("data-state");

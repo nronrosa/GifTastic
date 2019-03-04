@@ -1,5 +1,11 @@
-.body {
+body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    border: 10px double darkgreen;
+}
+
+p {
+    font-weight: 300;
 }
 
 .background {
@@ -18,22 +24,19 @@
     margin: auto;
 }
 
-img {
+.flower-img {
     border-radius: 35%;
-}
-      
-
-#flower-form {
-    text-align: center;
 }
 
 .heading {
     background-color: rgb(76, 119, 3);
-   font-size: 35px;
-   text-align: center;
+    font-size: 35px;
 }
 
 #created-buttons {
     margin: 10px;
-    text-align: center;
+}
+
+.flower-gif-deets {
+    float: left;
 }
