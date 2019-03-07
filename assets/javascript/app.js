@@ -13,7 +13,7 @@ $(document).ready(function () {
                 var results = response.data;
                 for (var i = 0; i < results.length; i++) {
                     var flowerDiv = $("<div class='col-lg-6 col-md-4 col-sm-12 flower-gif-deets'>");
-                    var flowerImage = $("<img>");
+                    var flowerImage = $("<img width='200' height='auto'>");
                     var pRating = $("<p>").text("Rating: " + results[i].rating);
                     var pTitle = $("<p>").text("Title: " + results[i].title);
                     flowerImage.attr("src", results[i].images.fixed_height_still.url);
